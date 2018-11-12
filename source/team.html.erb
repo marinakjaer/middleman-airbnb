@@ -4,9 +4,9 @@
       <% data.team.each do |team, info| %>
         <li>
           <% link_to "https://kitt.lewagon.com/alumni/#{info.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{info.github_nickname}", class: "img-circle avatar-size" %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{info.github_nickname}", class: "img-circle avatar-size border" %>
           <% end %>
-          <h2><%= info.name %></h2>
+          <h2 class="text-primary"><%= info.name %></h2>
           <p>
             <% link_to "https://github.com/#{info.github_nickname}", target: "_blank" do %>
               <i class="fab fa-github"></i> <%= info.github_nickname %>
