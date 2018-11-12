@@ -1,0 +1,16 @@
+shanghai:
+  name: 'Shanghai'
+  description: 'Very cool place'
+  category: 'Popular'
+barcelona:
+  name: 'Barcelona'
+  description: 'Warm and fun place'
+  category: 'Popular'
+rio:
+  name: 'Rio'
+  description: 'South america is awesome'
+  category: 'Popular'
+berlin:
+  name: 'Berlin'
+  description: 'Intresting city'
+  category: 'Popular'
