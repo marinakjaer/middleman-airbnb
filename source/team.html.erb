@@ -1,0 +1,19 @@
+<div id="team">
+  <div class="team-content">
+    <ul class="list-inline">
+      <% data.team.each do |team, info| %>
+        <li>
+          <% link_to "https://kitt.lewagon.com/alumni/#{info.github_nickname}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{info.github_nickname}", class: "img-circle" %>
+          <% end %>
+          <h2><%= info.name %></h2>
+          <p>
+            <% link_to "https://github.com/#{info.github_nickname}", target: "_blank" do %>
+              <i class="fab fa-github"></i> <%= info.github_nickname %>
+            <% end %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
